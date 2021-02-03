@@ -1,38 +1,79 @@
+:root {
+  --background: #292929;
+  --dropdown: #e9e9e9;
+  --border: #d1d1d1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Nunito;
+}
+
+:focus {
+  outline: transparent;
+}
+
 .App {
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.main-title {
+  color: #ffffff;
   text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ffffff;
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* CONVERTER SECTION */
+.position-center {
+  height: 455px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.converter-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: .5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.converter-container > * {
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-container > * {
+  padding: .5rem;
+  border: 1px solid var(--border);
+}
+
+.select {
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.select:first-child {
+  background-color: var(--dropdown);
+}
+
+.input {
+  font-size: 22px;
+  border-radius: 0 0 5px 5px;
+}
+
+.bi-arrow-left-right {
+  color: #ffffff;
 }

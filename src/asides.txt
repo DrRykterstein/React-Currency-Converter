@@ -1,0 +1,18 @@
+	// Alternative method for handling currency convertion
+
+  // const [leftInputAmount, setLeftInputAmount] = useState("");
+	// const [rightInputAmount, setRightInputAmount] = useState("");
+
+  // function handleCurrencyConvertion(e, id) {
+	// 	if (id === "left") {	
+	// 		const leftInputConvertion = Math.round(100 * (e.target.value / leftExchangeRate) * rightExchangeRate) / 100;
+	// 		setLeftInputAmount(e.target.value);
+	// 		setRightInputAmount(leftInputConvertion);
+	// 		console.log(id);
+	// 	} else {
+	// 		const rightInputConvertion = Math.round(100 * (e.target.value / rightExchangeRate) * leftExchangeRate) / 100;
+	// 		setRightInputAmount(e.target.value);
+	// 		setLeftInputAmount(rightInputConvertion);
+	// 		console.log(id);
+	// 	}
+	// }
