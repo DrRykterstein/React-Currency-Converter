@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { CurrencyContext } from "../contexts/currencyContext.js";
 
 const CurrencyRow = ({ id, inputAmount, handleSelectChange, handleInputChange }) => {
