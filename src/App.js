@@ -17,11 +17,11 @@ function App() {
 	}, []);
 
   return (
-   	<div className="App">
-      <h1 className="main-title">Currency Converter</h1>
-	    <CurrencyContext.Provider value={currencyData}>
-      	<Converter currencyData={currencyData} />
-      </CurrencyContext.Provider>
+    <div className="App">
+        <h1 className="main-title">Currency Converter</h1>
+        <CurrencyContext.Provider value={currencyData}>
+        <Converter currencyData={currencyData} />
+        </CurrencyContext.Provider>
     </div>
   );
 } 
