@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import fetchCurrencyData from "./modules/Api.js";
 import { CurrencyContext } from "./contexts/currencyContext.js";
-import Converter from './components/converter.jsx';
+import Converter from "./components/converter.jsx";
 
 function App() {
-	// Initialize state variable to store currency names
+	// Initialize currency data to store currency names
 	const [currencyData, setCurrencyData] = useState([]);
 
 	// Fetch currency data on mount
